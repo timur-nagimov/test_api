@@ -1,0 +1,1 @@
+To start project: `uvicorn test:app --reload` (console input)
