@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+      <h1>Генерация текста</h1>
+      <form method="post" action="/generate">
+         <label for="text">Enter a text:</label><br>
+         <textarea id="text" name="text" rows="4" cols="50"></textarea>
+         
+         <input type="radio" id="config1" name="config" value="intro">
+         <label for="config1">Intro</label>
+         <input type="radio" id="config2" name="config" value="annotation">
+         <label for="config2">Annotation</label>
+         
+      <input class="submit" type="submit" value="Generate">
+     </form>
+     <p>{{generated_text}}</p>
+     
+   </body>
+</html>
